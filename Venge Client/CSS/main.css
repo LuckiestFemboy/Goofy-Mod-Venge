@@ -1,0 +1,177 @@
+/* Venge Theme Mod - Combined Theme CSS (Midnight Edition, Uniform Background) */
+/* Replaces the original dark cream palette with a dark, cool-toned Midnight palette
+   and uses a single background color for all panels and sections for a uniform look. */
+
+:root {
+    --midnight-bg: var(--bg-4);
+    --midnight-panel: var(--bg-3);
+    --midnight-border: var(--border);
+    --midnight-button: var(--accent-3);
+    --midnight-hover: var(--accent-4);
+    --midnight-text: var(--text-1);
+    --midnight-highlight: var(--accent-2);
+    --midnight-button-text: var(--text-0);
+    --midnight-gradient: linear-gradient(to right, var(--bg-3), var(--bg-4));
+    --midnight-stats-bg1: hsla(220, 15%, 16%, 1); /* corresponds to --bg-2 */
+    --midnight-stats-bg2: hsla(220, 15%, 13%, 1); /* corresponds to --bg-3 */
+}
+
+/* General Background */
+body, html {
+    background-color: var(--midnight-bg) !important;
+    color: var(--midnight-text) !important;
+}
+
+/* Menu Bar and Navigation */
+#menu-bar {
+    background: var(--midnight-bg) !important;
+    border-bottom: 2px solid var(--midnight-border) !important;
+}
+
+#logo {
+    filter: grayscale(0%) brightness(0.8);
+}
+
+#menu-items li {
+    color: var(--midnight-text);
+    background-color: transparent;
+    border-left: solid 2px var(--midnight-border) !important;
+}
+
+#menu-items li:hover {
+    color: var(--midnight-highlight) !important;
+}
+
+/* Play Section */
+#play-section {
+    background: var(--midnight-bg) !important;
+    border: 1px solid var(--midnight-border) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.big-button, .invite-button, .btn-primary, .btn-secondary, .btn-yellow, .btn-purple, .btn-danger, .btn-offer, .popup-primary-button {
+    background-color: var(--midnight-button) !important;
+    border: 1px solid var(--midnight-border) !important;
+    color: var(--midnight-button-text) !important;
+}
+
+.big-button:hover, .invite-button:hover {
+    background-color: var(--midnight-hover) !important;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Options Bar */
+.options {
+    border-top: 0px solid var(--midnight-border) !important;
+    margin-top: 15px;
+}
+
+.options i {
+    color: var(--midnight-highlight) !important;
+}
+
+.options .profile-exp-bar {
+    background-color: var(--midnight-bg) !important;
+}
+
+.options .profile-exp-bar span {
+    background-color: var(--midnight-highlight) !important;
+}
+
+.options > a {
+    color: var(--midnight-text);
+}
+
+/* Profile and Stats */
+.profile-details-wrapper.Lilium,
+.profile-details-wrapper.Shin,
+.profile-details-wrapper.Echo,
+.profile-details-wrapper.Kulu,
+.stats-wrapper {
+    background: var(--midnight-bg) !important;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats-col li {
+    background: var(--midnight-bg) !important;
+}
+
+.stats-col li:nth-child(even) {
+    background: var(--midnight-bg) !important;
+}
+
+/* Messaging */
+.message-list li,
+#message-inbox .message .content,
+#message-inbox .message a.username,
+.inbox-content-wrapper,
+.inbox-left-content,
+.inbox-search-box,
+.inbox-content-head {
+    background: var(--midnight-bg) !important;
+    border: 1px solid var(--midnight-border) !important;
+    color: var(--midnight-text) !important;
+}
+
+.chat-wrap .message-sent input {
+    background: var(--midnight-bg) !important;
+    color: var(--midnight-text);
+}
+
+/* Popups */
+.popup,
+.popup-bottom-content,
+.popup-side-content,
+.popup-reverse .popup-side-content,
+.popup-reverse .popup-side-menu {
+    background: var(--midnight-bg) !important;
+    color: var(--midnight-text) !important;
+}
+
+.popup-header {
+    background: var(--midnight-bg) !important;
+}
+
+.popup-header .popup-close {
+    background-color: var(--midnight-button) !important;
+    color: var(--midnight-button-text);
+}
+
+.popup-side-menu li {
+    background: var(--midnight-bg) !important;
+    color: var(--midnight-text);
+}
+
+.popup-side-menu li.active {
+    background-color: var(--midnight-highlight) !important;
+    color: var(--midnight-panel) !important;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Banners and Rewards */
+#home-banner-horizontal,
+.daily-reward-wrapper,
+.daily-reward-content ul li,
+.daily-reward-header {
+    background: var(--midnight-bg) !important;
+    border: 1px solid var(--midnight-border) !important;
+}
+
+.daily-reward-content ul li.active {
+    background: var(--midnight-highlight) !important;
+    color: var(--midnight-bg) !important;
+}
+
+/* Tables and Misc */
+.subtab {
+    background: var(--midnight-bg) !important;
+    color: var(--midnight-text);
+}
+
+/* Footer Note */
+.popup-bottom-left-text:after {
+    content: 'Venge Mod - Midnight Theme Version' !important;
+    color: var(--midnight-highlight);
+    font-size: 23px !important;
+}
